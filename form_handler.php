@@ -4,7 +4,7 @@ $visitor_email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$email_from = 'info@btfesports.com';
+$email_from = 'info@btfesports.pages.dev';
 
 $email_subject = 'New Query Submission';
 
