@@ -8,10 +8,10 @@ $email_from = 'info@btfesports.pages.dev';
 
 $email_subject = 'New Query Submission';
 
-$email_body = "User Name: $name/n".
-              "User Email: $visitor_email/n".
-              "Subject: $subject/n".
-              "Message: $message/n";
+$email_body = "User Name: $name\n".
+              "User Email: $visitor_email\n".
+              "Subject: $subject\n".
+              "Message: $message\n";
 
 $to = 'barathlakshman06@gmail.com';
 
@@ -21,9 +21,6 @@ $headers .= "Reply-T0: $visitor_email \r\n";
 
 mail($to,$email_subject,$email_body,$headers);
 
-header("Location: index3.html")
+header("Location: index3.html");
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 ?>
