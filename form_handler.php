@@ -23,5 +23,7 @@ mail($to,$email_subject,$email_body,$headers);
 
 header("Location: index3.html")
 
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
