@@ -1,21 +1,17 @@
 <?php
 $name = $_POST["name"];
-$ig_name = $_POST["ig_name"];
-$id = $_POST["id"];
 $visitor_email = $_POST["email"];
-$number = $_POST["number"];
-$category = $_POST["dropdown"];
+$subject = $_POST["subject"];
+$message = $_POST["message"];
 
 $email_from = 'info@btfesports.com';
 
 $email_subject = 'New Query Submission';
 
 $email_body = "User Name: $name\n".
-              "In Game Name: $ig_name\n".
-              "In Game ID: $id\n".
-              "Subject: $number\n".
-              "Message: $category\n".
-              "User Email: $visitor_email\n";
+              "User Email: $visitor_email\n".
+              "Subject: $subject\n".
+              "Message: $message\n";
 
 $to = 'barathlakshman06@gmail.com';
 
